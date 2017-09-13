@@ -16,7 +16,7 @@ Add following lines into your
 **module:**
 
 ```typescript
-import { Ng4FilesModule } from './ng4-files';
+import { Ng4FilesModule } from 'angular4-files-upload';
 ```
 
 add Ng4FilesModule to your module imports section<br/>
@@ -218,6 +218,13 @@ _! Note on statuses STATUS_MAX_FILE_SIZE_EXCEED or STATUS_NOT_MATCH_EXTENSIONS y
 _configId_<br>
 Pass your named config with configId
 <br>
+
+## Drag and Drop Events Callback
+`onDragEnterCall(event)` <br>
+`onDragOverCall(event)` <br>
+`onDropCall(event)`
+
+<br><br>
 
 ## Caveat
 Please don't use button tag in template inside ng4-files-click<br>
