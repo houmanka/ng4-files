@@ -4,7 +4,7 @@
 
 <hr />
 
-<ng4-files-drop (filesSelect)="filesSelect($event)" [configId]="'another-config'">
+<ng4-files-drop (filesSelect)="filesSelect($event)" (onDragEnterCall)="onDragEnterCall($event)" (onDragOverCall)="onDragOverCall($event)" (onDropCall)="onDropCall($event)" [configId]="'another-config'">
   <div style="display: inline-block; height: 100px; width: 100px; background-color: gray">
     {{selectedFiles}}
   </div>

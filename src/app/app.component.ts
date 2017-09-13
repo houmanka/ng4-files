@@ -31,6 +31,18 @@ export class AppComponent implements OnInit {
       private ng4FilesService: Ng4FilesService
   ) {}
 
+  onDragEnterCall(data) {
+    console.log(`I am onDragEnterCall`);
+  }
+
+  onDragOverCall(data) {
+    console.log(`I am onDragOverCall`);
+  }
+
+  onDropCall(data) {
+    console.log(`I am onDropCall`);
+  }
+
   ngOnInit() {
     this.ng4FilesService.addConfig(this.sharedConfig);
     this.ng4FilesService.addConfig(this.namedConfig, 'another-config');
